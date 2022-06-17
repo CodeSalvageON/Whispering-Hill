@@ -1,0 +1,152 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #dafffd;
+}
+
+hr {
+  width: 50px;
+  border-color: transparent;
+  border-right-color: rgba(255, 255, 255, 0.7);
+  border-right-width: 50px;
+  position: absolute;
+  bottom: 100%;
+  transform-origin: 100% 50%;
+  animation-name: rain;
+  animation-duration: 5s;
+  display: none;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+input, button {
+  border: hidden; 
+  color: black;
+  font-family: Georgia, serif;
+}
+
+@keyframes rain {
+  from {
+    transform: rotate(105deg) translateX(0);
+  } 
+  
+  to {
+    transform: rotate(105deg) translateX(calc(100vh + 20px));
+  }
+}
+
+#mail-cont {
+  width: 350px; 
+  height: 350px; 
+  overflow-y: auto;
+}
+
+#settings {
+  top: 0px;
+  position: absolute;
+  z-index: 100;
+}
+
+#ground {
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+
+#clouds {
+  position: absolute;
+}
+
+#clouds1 {
+  position: absolute;
+}
+
+#bird {
+  position: absolute;
+}
+
+#fishbowl {
+  overflow: hidden;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  background-color: #dafffd;
+  transition: ease-in-out 5s background-color;
+}
+
+#window {
+  margin: auto;
+  width: 500px;
+  height: 400px;
+  position: relative;
+  display: none;
+  border: 0.5px solid white;
+}
+
+#title {
+  margin: auto;
+  width: 500px;
+  height: 400px;
+  background-size: cover;
+  position: relative; 
+  background-image: url('/src/www/image/title.jpeg');
+}
+
+#mailbox {
+  margin: auto; 
+  width: 500px;
+  height: 400px; 
+  background-size: cover; 
+  position: relative;
+  background-image: url('/src/www/image/mailbox.png');
+}
+
+#title-options {
+  top: 150px;
+  position: absolute; 
+}
+
+#village {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+#fireflies {
+  left: 200px;
+  bottom: 100px;
+  display: none;
+  position: absolute;
+}
+
+#c-stuff {
+  bottom: 0px;
+  right: 0px; 
+  z-index: 100;
+  position: absolute;
+}
+
+.title-btn {
+  width: 130px; 
+  border-radius: 5px;
+  background-color: #e9fbfbff;
+  padding: 5px;
+  transition: background-color 50ms ease-in-out;
+}
+
+.ugotmail {
+  width: 130px; 
+  border-radius: 5px;
+  background-color: #e9fbfbff;
+  padding: 5px;
+  transition: background-color 50ms ease-in-out;
+}
+
+.title-btn:hover {
+  cursor: default;
+  background-color: #d5fbebff;
+}
